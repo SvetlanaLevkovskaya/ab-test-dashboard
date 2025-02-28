@@ -1,0 +1,46 @@
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 80dvh;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .textContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      h1 {
+        font-size: 1.875rem;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        background-color: #2ee5ac;
+        border: 1px solid #2ee5ac;
+        color: white;
+        transition: all 0.3s ease;
+        margin-top: 1.25rem;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

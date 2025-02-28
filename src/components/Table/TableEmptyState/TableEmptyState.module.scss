@@ -21,6 +21,11 @@
     height: 1.875rem;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
 }

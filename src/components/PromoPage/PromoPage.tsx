@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { ArrowIcon } from '@components/Icons/ArrowIcon.tsx'
+import { ArrowIcon } from '@components/ui/Icons/ArrowIcon.tsx'
 
 import s from './PromoPage.module.scss'
 

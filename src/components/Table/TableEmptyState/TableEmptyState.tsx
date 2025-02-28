@@ -1,9 +1,16 @@
-export const TableEmptyState = () => {
+import s from './TableEmptyState.module.scss'
+
+interface Props {
+  onReset: () => void
+}
+
+export const TableEmptyState = ({ onReset }: Props) => {
   return (
-    <tr>
-      <td colSpan={6} style={{ textAlign: 'center' }}>
-        Your search did not match any results.
-      </td>
-    </tr>
+    <div className={s.container}>
+      <p>Your search did not match any results.</p>
+      <button onClick={onReset} className={s.button}>
+        Reset
+      </button>
+    </div>
   )
 }

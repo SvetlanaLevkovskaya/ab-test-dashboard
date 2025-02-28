@@ -2,8 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import { AppRoutes, routeConfig } from '@config/routeConfig.tsx'
 
-import './App.css'
-
 function App() {
   return (
     <Router>

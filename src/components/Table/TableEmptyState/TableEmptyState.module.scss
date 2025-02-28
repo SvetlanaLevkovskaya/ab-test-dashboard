@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+
+
+  & p {
+    font-size: 1.125rem;
+  }
+
+
+  .button {
+    background-color: #2ee5ac;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    width: 6rem;
+    height: 1.875rem;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+

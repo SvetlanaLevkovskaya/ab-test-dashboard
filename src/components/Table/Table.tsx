@@ -40,14 +40,18 @@ export const Table = ({ data }: Props) => {
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       />
-      <table>
-        <TableHeader onSort={handleSort} sortConfig={sortConfig} />
-        <tbody>
-          {tableData.length > 0 &&
-            tableData.map((item, index) => <TableRow key={item.id} item={item} index={index} />)}
-          {!tableData.length && <TableEmptyState />}
-        </tbody>
-      </table>
+      {tableData.length > 0 && (
+        <table>
+          <TableHeader onSort={handleSort} sortConfig={sortConfig} />
+          <tbody>
+            {tableData.map((item, index) => (
+              <TableRow key={item.id} item={item} index={index} />
+            ))}
+          </tbody>
+        </table>
+      )}
+
+      {!tableData.length && <TableEmptyState onReset={() => setFilter('')} />}
     </div>
   )
 }

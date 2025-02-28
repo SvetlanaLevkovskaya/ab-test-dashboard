@@ -1,4 +1,4 @@
-import { ArrowIcon } from '@components/Icons/ArrowIcon.tsx'
+import { ArrowIcon } from '@components/ui/Icons/ArrowIcon.tsx'
 import cls from 'classnames'
 
 import s from './TableHeader.module.scss'

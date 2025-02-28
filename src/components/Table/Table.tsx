@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import { SearchInput } from '@components/SearchInput/SearchInput.tsx'
 import { useFilteredData } from '@hooks/useFilteredData.ts'
 import { useSortedData } from '@hooks/useSortedData.ts'
 
@@ -34,12 +35,7 @@ export const Table = ({ data }: Props) => {
 
   return (
     <div className={s.tableContainer}>
-      <input
-        type="text"
-        placeholder="What test are you looking for?"
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-      />
+      <SearchInput value={filter} onChange={setFilter} count={tableData.length} />
       {tableData.length > 0 && (
         <table>
           <TableHeader onSort={handleSort} sortConfig={sortConfig} />

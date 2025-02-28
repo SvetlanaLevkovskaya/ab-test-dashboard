@@ -1,5 +1,6 @@
-import { Site, Test } from '@type/index.ts'
 import axios from 'axios'
+
+import { Site, Test } from '../types'
 
 const fetchSiteById = async (siteId: number): Promise<Site> => {
   const response = await axios.get(`http://localhost:3100/sites/${siteId}`)

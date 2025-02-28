@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { Test } from '@type/index.ts'
+import { Test } from '../types'
 
 enum Status {
   DRAFT = 'DRAFT',
@@ -24,7 +24,6 @@ export const useSortedData = (
     if (sortConfig !== null) {
       const sortedData = [...data].sort((a, b) => {
         if (sortConfig.key === 'status') {
-          // Сортировка по статусу
           const indexA =
             sortConfig.direction === 'asc'
               ? statusOrderAsc.indexOf(a.status)

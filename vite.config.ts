@@ -10,7 +10,6 @@ const aliasFolders = [
   'hooks',
   'pages',
   'services',
-  'types',
   'utils',
 ]
 

@@ -1,0 +1,18 @@
+.statusIndicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.nameCell {
+  position: relative;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 13px;
+  width: 389px;
+  height: 40px;
+}

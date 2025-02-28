@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { Test } from '@type/index.ts'
+import { Test } from '../types'
 
 export const useFilteredData = (data: Test[], filter: string) => {
   const [filteredData, setFilteredData] = useState<Test[]>(data)

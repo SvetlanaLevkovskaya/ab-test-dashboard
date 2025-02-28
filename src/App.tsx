@@ -1,18 +1,16 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import './App.css'
+import { AppRoutes, routeConfig } from '@config/routeConfig.tsx'
 
-import { Dashboard } from './pages/Dashboard/Dashboard'
-import { Finalize } from './pages/Finalize/Finalize'
-import { Results } from './pages/Results/Results'
+import './App.css'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/results/:testId" element={<Results />} />
-        <Route path="/finalize/:testId" element={<Finalize />} />
+        {Object.values(AppRoutes).map((route) => (
+          <Route key={route} path={routeConfig[route].path} element={routeConfig[route].element} />
+        ))}
       </Routes>
     </Router>
   )

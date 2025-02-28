@@ -5,7 +5,7 @@ import { Table } from '@components/Table/Table.tsx'
 import { fetchABTests } from '../../api/abTestsApi.ts'
 import { Test } from '../../types'
 
-export const Dashboard = () => {
+export const DashboardPage = () => {
   const [abTests, setABTests] = useState<Test[]>([])
 
   useEffect(() => {

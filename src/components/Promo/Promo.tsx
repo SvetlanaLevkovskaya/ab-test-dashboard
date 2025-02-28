@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 
 import { ArrowIcon } from '@components/ui/Icons/ArrowIcon.tsx'
 
-import s from './PromoPage.module.scss'
+import s from './Promo.module.scss'
 
 interface Props {
   title: string
   description: string
 }
 
-export const PromoPage = ({ title, description }: Props) => {
+export const Promo = ({ title, description }: Props) => {
   return (
     <div className={s.container}>
       <h2>{title}</h2>

@@ -1,5 +1,5 @@
-import { PromoPage } from '@components/PromoPage/PromoPage.tsx'
+import { Promo } from '@components/Promo/Promo.tsx'
 
 export const ResultsPage = () => {
-  return <PromoPage title="Results" description="Order basket redesign" />
+  return <Promo title="Results" description="Order basket redesign" />
 }

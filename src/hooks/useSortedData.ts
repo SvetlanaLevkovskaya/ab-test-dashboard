@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { Test } from '../types'
-
-enum Status {
-  DRAFT = 'DRAFT',
-  ONLINE = 'ONLINE',
-  PAUSED = 'PAUSED',
-  STOPPED = 'STOPPED',
-}
+import { Status, Test } from '../types'
 
 const statusOrderAsc = [Status.ONLINE, Status.PAUSED, Status.STOPPED, Status.DRAFT]
 const statusOrderDesc = [Status.DRAFT, Status.STOPPED, Status.PAUSED, Status.ONLINE]
@@ -17,8 +10,6 @@ export const useSortedData = (
   sortConfig: { key: string; direction: 'asc' | 'desc' } | null
 ) => {
   const [sortedData, setSortedData] = useState<Test[]>(data)
-
-  console.log('data', data)
 
   useEffect(() => {
     if (sortConfig !== null) {
@@ -57,8 +48,6 @@ export const useSortedData = (
       setSortedData(data)
     }
   }, [sortConfig, data])
-
-  console.log('sortedData', sortedData)
 
   return sortedData
 }

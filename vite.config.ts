@@ -4,12 +4,12 @@ import { defineConfig } from 'vite'
 
 const aliasFolders = [
   'assets',
+  'api',
   'constants',
   'components',
   'config',
   'hooks',
   'pages',
-  'services',
   'utils',
 ]
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { fetchABTests } from '../api/abTestsApi.ts'
+import { fetchABTests } from '@api/abTestsApi.ts'
+
 import { Test } from '../types'
 
 export const useFetchABTests = () => {

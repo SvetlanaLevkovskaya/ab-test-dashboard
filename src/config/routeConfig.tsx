@@ -2,7 +2,7 @@ import { RouteProps } from 'react-router-dom'
 
 import { DashboardPage } from '@pages/Dashboard/DashboardPage.tsx'
 import { FinalizePage } from '@pages/Finalize/FinalizePage.tsx'
-import { NotFoundPage } from '@pages/NotFounPage/NotFoundPage.tsx'
+import { NotFoundPage } from '@pages/NotFound/NotFoundPage.tsx'
 import { ResultsPage } from '@pages/Results/ResultsPage.tsx'
 
 export enum AppRoutes {

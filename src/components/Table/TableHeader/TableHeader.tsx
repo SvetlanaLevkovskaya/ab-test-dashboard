@@ -25,15 +25,17 @@ export const TableHeader = ({ onSort, sortConfig }: Props) => {
       <tr>
         {columns.map(({ label, key }) => (
           <th key={key} className={s.thClickable} onClick={() => handleSort(key)}>
-            {label}
-            {sortConfig?.key === key && (
-              <ArrowIcon
-                className={cls(s.arrowIcon, {
-                  [s.asc]: sortConfig.direction === 'asc',
-                  [s.desc]: sortConfig.direction === 'desc',
-                })}
-              />
-            )}
+            <span className={s.labelContainer}>
+              {label}
+              {sortConfig?.key === key && (
+                <ArrowIcon
+                  className={cls(s.arrowIcon, {
+                    [s.asc]: sortConfig.direction === 'asc',
+                    [s.desc]: sortConfig.direction === 'desc',
+                  })}
+                />
+              )}
+            </span>
           </th>
         ))}
         <th></th>

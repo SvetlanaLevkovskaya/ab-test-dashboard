@@ -13,4 +13,18 @@
 
 .thClickable {
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus {
+    outline: none;
+    color: inherit;
+  }
+}
+
+.labelContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }

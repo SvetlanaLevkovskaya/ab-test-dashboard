@@ -3,7 +3,9 @@ import { Spinner } from '@components/ui/Spinner/Spinner.tsx'
 import { useFetchABTests } from '@hooks/useFetchABTests.ts'
 
 export const DashboardPage = () => {
-  const { abTests, isLoading } = useFetchABTests()
+  const { abTests, isLoading, error } = useFetchABTests()
+
+  if (error) return null
 
   return (
     <>

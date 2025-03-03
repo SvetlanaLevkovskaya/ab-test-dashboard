@@ -25,7 +25,6 @@
 .link {
   text-decoration: none;
   color: inherit;
-  margin-top: 20px;
   font-size: 14px;
   font-weight: 600;
   display: flex;
@@ -39,5 +38,5 @@
 
 .link span {
   font-size: 18px;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
